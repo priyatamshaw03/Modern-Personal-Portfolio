@@ -53,10 +53,13 @@ import admission from "./admission.png";
 
 
 import contact from "./contact.webp";
+import Priyatam_SDE_Resume from "./Priyatam_SDE_Resume.pdf";
 
 
 
 const assets = {
+
+  Priyatam_SDE_Resume,
   // General
   logo,
   heroimg,

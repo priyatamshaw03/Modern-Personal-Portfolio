@@ -68,7 +68,7 @@ const About = () => {
 
             {/* Button */}
             <a
-              href="/Priyatam-Resume.pdf"
+              href={assets.Priyatam_SDE_Resume}
               download
               className="inline-flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full border-2 border-primary shadow-md transition duration-300 hover:bg-transparent hover:text-primary"
             >
