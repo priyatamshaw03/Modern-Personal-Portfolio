@@ -36,7 +36,7 @@ const About = () => {
             <img
               src={assets.user}
               alt="user"
-              className="h-86 w-86 object-cover rounded-full shadow-[0_0_40px] shadow-primary border border-primary"
+              className="h-80 w-80 object-cover rounded-full shadow-[0_0_40px] shadow-primary border border-primary"
             />
           </motion.div>
 

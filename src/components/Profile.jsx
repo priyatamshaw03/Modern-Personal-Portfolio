@@ -7,12 +7,12 @@ const Profile = () => {
     {
       year: "2022 - 2026",
       title: "Budge Budge Institute of Technology",
-      desc: "Currently pursuing B.Tech in Computer Science & Engineering (CSE), expected to complete in 2026.",
+      desc: "Currently pursuing B.Tech in Computer Science & Engineering (CSE) under Maulana Abul Kalam Azad University of Technology (MAKAUT), expected to complete in 2026.",
     },
     {
       year: "2016 - 2022",
       title: "BBIT Public School",
-      desc: "Completed Secondary (10th) and Senior Secondary (12th) Studies under CBSE at BBIT Public School, Kolkata.",
+      desc: "Completed Secondary (10th) and Senior Secondary (12th) Studies from BBIT Public School under Central Board of Secondary Education (CBSE).",
     },
   ];
 
@@ -24,7 +24,7 @@ const Profile = () => {
       desc: "Leading cloud initiatives and events at GDGC BBIT, helping students explore Google Cloud technologies.",
     },
     {
-      year: "2023 - Present",
+      year: "2023 - 2025",
       title: "Coders' Club Member, BBIT",
       desc: "Actively contributing to coding activities, competitions, and peer learning sessions at BBIT.",
     },

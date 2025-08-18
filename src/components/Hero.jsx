@@ -55,13 +55,13 @@ const Hero = () => {
         </p>
 
         <div className="flex items-center gap-4 mt-6 text-primary">
-          <a href="#" className="hover:-translate-y-0.5 transition-all duration-300">
-            <img src={assets.instagram_icon} alt="" className="w-6 h-6"/>
-          </a>
-          <a href="#" className="hover:-translate-y-0.5 transition-all duration-300">
+          <a href="https://www.linkedin.com/in/priyatam-shaw-a83457253" target="_blank" className="hover:-translate-y-1 transition-all duration-300">
             <img src={assets.linkedin} alt="" className="w-6 h-6"/>
           </a>
-          <a href="#" className="hover:-translate-y-0.5 transition-all duration-300">
+          <a href="https://x.com/priyatam_shaw" target="_blank" className="hover:-translate-y-1 transition-all duration-300">
+            <img src={assets.twitter_icon} alt="" className="w-6 h-6"/>
+          </a>
+          <a href="https://github.com/priyatamshaw03" className="hover:-translate-y-1 transition-all duration-300">
             <img src={assets.github1} alt="" className="w-6 h-6"/>
           </a>
         </div>

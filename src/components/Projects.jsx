@@ -111,6 +111,9 @@ const HoverCard = ({ project }) => {
       onMouseLeave={() => setVisible(false)}
       className="relative w-80 h-96 rounded-xl p-1 bg-white backdrop-blur-md text-gray-800 dark:bg-gray-900 overflow-hidden shadow-lg cursor-pointer"
       variants={fadeBottom}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
     >
       {/* Gradient hover effect */}
       {visible && (

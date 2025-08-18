@@ -5,7 +5,7 @@ import assets from "../assets/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-primary to-[#DDD9FF] text-center px-6 py-6">
+    <footer className="bg-gradient-to-r from-primary/80 to-[#c9c4f8] text-center px-6 py-6">
       {/* Quick Links */}
       <div className="mb-6">
         <h3 className="text-xl font-semibold mb-3">Quick Links</h3>
@@ -47,15 +47,6 @@ const Footer = () => {
       {/* Social Icons */}
       <div className="flex justify-center items-center gap-5 my-6 text-2xl">
         <a
-          href="https://x.com/priyatam_shaw"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:-translate-y-1 transition"
-        >
-          <img src={assets.twitter_icon} alt="" />
-          {/* <FaXTwitter /> */}
-        </a>
-        <a
           href="https://www.facebook.com/priyatam.gupta.754"
           target="_blank"
           rel="noreferrer"
@@ -71,6 +62,24 @@ const Footer = () => {
           className="hover:-translate-y-1 transition"
         >
           <img src={assets.linkedin_icon} alt="" />
+          
+        </a>
+        <a
+          href="https://www.instagram.com/mr_priyatam_"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:-translate-y-1 transition"
+        >
+          <img src={assets.instagram_icon} alt="" className="w-6 h-6"/>
+          {/* <FaXTwitter /> */}
+        </a>
+        <a
+          href="https://github.com/priyatamshaw03"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:-translate-y-1 transition"
+        >
+          <img src={assets.GitHub} alt="" />
           {/* <FaGithub /> */}
         </a>
         <a
