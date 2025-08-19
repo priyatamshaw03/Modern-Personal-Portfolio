@@ -17,6 +17,7 @@ const Navbar = ({theme, setTheme}) => {
             <a onClick={()=> setOpen(false)} href="#skills" className='sm:hover:text-primary'>Skills</a>
             <a onClick={()=> setOpen(false)} href="#profile" className='sm:hover:text-primary'>Profile</a>
             <a onClick={()=> setOpen(false)} href="#projects" className='sm:hover:text-primary'>Projects</a>
+            <a onClick={()=> setOpen(false)} href="#contact" className='sm:hover:text-primary'>Contact</a>
 
         </div>
 

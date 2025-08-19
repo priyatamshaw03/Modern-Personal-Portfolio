@@ -4,7 +4,7 @@ import assets from "../assets/assets";
 
 const About = () => {
   const fadeBottom = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
@@ -42,7 +42,7 @@ const About = () => {
 
           {/* Right - Text */}
           <motion.div
-            className="md:w-3/5 text-justify dark:text-white"
+            className="md:w-3/5 dark:text-white"
             variants={fadeBottom}
             initial="hidden"
             whileInView="visible"

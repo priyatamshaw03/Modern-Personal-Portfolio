@@ -99,7 +99,7 @@ const HoverCard = ({ project }) => {
   };
 
   const fadeBottom = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
@@ -124,7 +124,7 @@ const HoverCard = ({ project }) => {
       )}
 
       {/* Card content */}
-      <div className="relative bg-white dark:bg-gray-900 p-3 h-full w-full rounded-[10px] flex flex-col items-center text-center">
+      <div className="relative bg-white dark:bg-gray-900 p-2 h-full w-full rounded-[10px] flex flex-col items-center text-center">
         <img
           src={project.img}
           alt={project.title}

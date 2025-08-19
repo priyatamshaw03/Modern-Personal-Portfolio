@@ -73,15 +73,7 @@ const Footer = () => {
           <img src={assets.instagram_icon} alt="" className="w-6 h-6"/>
           {/* <FaXTwitter /> */}
         </a>
-        <a
-          href="https://github.com/priyatamshaw03"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:-translate-y-1 transition"
-        >
-          <img src={assets.GitHub} alt="" />
-          {/* <FaGithub /> */}
-        </a>
+        
         <a
           href="https://www.instagram.com/mr_priyatam_/"
           target="_blank"
