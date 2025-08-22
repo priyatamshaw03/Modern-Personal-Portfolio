@@ -23,7 +23,7 @@ const Projects = () => {
       title: "Employee Salary Predictor",
       desc: "A machine learning project that predicts employee salaries based on various factors such as experience, education, and Job role.",
       github: "https://github.com/priyatamshaw03/Employee-Salary-Predictor",
-      link: "https://priyatamshaw03-employee-salary-predictor-app.streamlit.app",
+      link: "https://employee-salary-predictor-by-priyatamshaw.streamlit.app",
     },
     {
       img: assets.portfolio,
@@ -48,7 +48,7 @@ const Projects = () => {
     },
   ];
 
-  // Container variant for stagger
+  // Container variant for stagger effect
   const containerVariant = {
     hidden: {},
     visible: {
@@ -56,12 +56,6 @@ const Projects = () => {
         staggerChildren: 0.2,
       },
     },
-  };
-
-  // Bottom-to-top fade for each card
-  const fadeBottom = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   return (
@@ -98,9 +92,10 @@ const HoverCard = ({ project }) => {
     setPosition({ x: e.clientX - bounds.left, y: e.clientY - bounds.top });
   };
 
-  const fadeBottom = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  // Pop-up scale animation
+  const popup = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
   };
 
   return (
@@ -110,7 +105,7 @@ const HoverCard = ({ project }) => {
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       className="relative w-80 h-96 rounded-xl p-1 bg-white backdrop-blur-md text-gray-800 dark:bg-gray-900 overflow-hidden shadow-lg cursor-pointer"
-      variants={fadeBottom}
+      variants={popup}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
