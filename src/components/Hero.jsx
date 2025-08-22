@@ -3,19 +3,26 @@ import { motion } from "framer-motion";
 import assets from "../assets/assets";
 import { Typewriter } from "react-simple-typewriter";
 
-// Bottom-to-top fade variant
-const fadeBottom = (delay = 0) => ({
-  hidden: { opacity: 0, y: 100 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay } },
+// Left-to-right fade variant
+const fadeLeft = (delay = 0) => ({
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay } },
+});
+
+// Right-to-left fade variant
+const fadeRight = (delay = 0) => ({
+  hidden: { opacity: 0, x: 100 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay } },
 });
 
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 sm:px-12 lg:px-24 xl:px-40 py-20 md:py-32">
+      
       {/* Left Content */}
       <motion.div
         className="flex-1 text-left"
-        variants={fadeBottom(0)}
+        variants={fadeLeft(0)}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -101,7 +108,7 @@ const Hero = () => {
       {/* Right Image */}
       <motion.div
         className="flex-1 relative flex justify-center"
-        variants={fadeBottom(0.3)} // small delay for stagger effect
+        variants={fadeRight(0.3)} // small delay for stagger effect
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
