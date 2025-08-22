@@ -7,7 +7,7 @@ const Projects = () => {
     {
       img: assets.greenbasket,
       title: "GreenBasket",
-      desc: "A responsive grocery delivery website features real-time cart updates, user authentication, and a seamless checkout process with address and order management.",
+      desc: "A responsive grocery shop website features real-time cart updates, user authentication, and a seamless checkout process with address and order management.",
       github: "https://github.com/priyatamshaw03/GreenBasket",
       link: "https://greenbasket-grocery.vercel.app",
     },
