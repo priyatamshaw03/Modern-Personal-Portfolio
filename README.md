@@ -3,6 +3,8 @@
 A modern, responsive personal portfolio website built with **React.js** and **Tailwind CSS**.  
 This portfolio showcases my projects, skills, experience, and provides an easy way to connect with me.
 
+Live Demo: https://priyatamshaw.vercel.app
+
 ---
 
 ## 🚀 Features
@@ -28,8 +30,8 @@ This portfolio showcases my projects, skills, experience, and provides an easy w
 ├── public/             # Static files
 ├── src/
 │   ├── assets/         # Images, icons
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page-level components (Home, About, Projects, Contact)
+│   ├── components/     # Reusable UI components (cards, timelines, buttons, etc.)
+│   ├── pages/          # Page-level components 
 │   ├── App.js          # Main App component
 │   └── index.js        # Entry point
 ├── tailwind.config.js  # Tailwind CSS configuration
