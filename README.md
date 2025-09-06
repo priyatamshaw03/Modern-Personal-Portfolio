@@ -1,12 +1,41 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React.js** and **Tailwind CSS**.  
+This portfolio showcases my projects, skills, experience, and provides an easy way to connect with me.
 
-Currently, two official plugins are available:
+Live Demo: https://priyatamshaw.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- ⚡️ **Fast and Responsive** – Built with React and optimized with Tailwind CSS.  
+- 🎨 **Clean UI/UX** – Minimal, modern, and elegant design.  
+- 📱 **Mobile Friendly** – Fully responsive across all devices.  
+- 🌑 **Dark Mode** – Easy toggle for light/dark themes.  
+- 🛠 **Reusable Components** – Modular React components for scalability.  
+- 📬 **Contact Section** – Integrated form to connect directly.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+- **Frontend:** [React.js](https://reactjs.org/)  
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+- **Icons:** [Lucide Icons](https://lucide.dev/) / [Heroicons](https://heroicons.com/)  
+- **Deployment:** Vercel  
+
+---
+
+## 📂 Project Structure
+```bash
+├── public/             # Static files
+├── src/
+│   ├── assets/         # Images, icons
+│   ├── components/     # Reusable UI components (cards, timelines, buttons, etc.)
+│   ├── pages/          # Page-level components 
+│   ├── App.js          # Main App component
+│   └── index.js        # Entry point
+├── tailwind.config.js  # Tailwind CSS configuration
+├── package.json        # Dependencies and scripts
+└── README.md           # Project documentation
+
+
