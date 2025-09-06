@@ -55,11 +55,6 @@ const Skills = () => {
     },
   };
 
-  const fadeBottom = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
   return (
     <section id="skills" className="py-16 px-6">
       <h2 className="text-3xl sm:text-5xl font-bold text-center mb-12 dark:text-white text-gray-800">
@@ -94,10 +89,10 @@ const HoverCard = ({ category }) => {
     setPosition({ x: e.clientX - bounds.left, y: e.clientY - bounds.top });
   };
 
-  // Fade variant for each card
-  const fadeBottom = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  // Pop-up scale animation
+  const popup = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
   };
 
   return (
@@ -107,7 +102,10 @@ const HoverCard = ({ category }) => {
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       className="relative w-full h-full rounded-xl p-1 bg-white dark:bg-gray-900 dark:text-white shadow-lg cursor-pointer overflow-hidden"
-      variants={fadeBottom}
+      variants={popup}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
     >
       {/* Gradient hover effect */}
       {visible && (

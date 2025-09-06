@@ -58,19 +58,19 @@ const Hero = () => {
           variants={item} 
           className="inline-flex items-center gap-2 border border-primary p-2 px-4 rounded-full mb-4"
         >
-          <p className="text-xs dark:text-white">Welcome to my portfolio!</p>
+          <p className="text-xs dark:text-white">Hi! Welcome to my portfolio!</p>
         </motion.div>
 
         <motion.h2 
           variants={item} 
           className="text-2xl md:text-4xl font-medium dark:text-white"
         >
-          Hello! My name is
+          My name is
         </motion.h2>
 
         <motion.h1 
           variants={item} 
-          className="text-4xl sm:text-5xl md:text-6xl xl:text-[78px] font-semibold max-w-3xl text-primary pb-2"
+          className="text-4xl sm:text-5xl md:text-6xl xl:text-[70px] font-semibold max-w-3xl text-primary pb-2"
         >
           Priyatam Shaw
         </motion.h1>
@@ -154,11 +154,11 @@ const Hero = () => {
   whileInView="visible"
   viewport={{ once: true, amount: 0.3 }}
 >
-  <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-blue-400 via-primary to-purple-500 blur-3xl opacity-40"></div>
+  <div className="absolute inset-0 z-[-1] bg-gradient-to-r from-blue-400 via-primary to-purple-500 blur-3xl opacity-30"></div>
   <img
-    src={assets.heroimg}
+    src={assets.heroimage}
     alt="Hero"
-    className="w-full max-w-lg relative"
+    className="w-full h-full max-w-lg relative"
   />
 </motion.div>
     </div>

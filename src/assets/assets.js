@@ -41,6 +41,7 @@ import menu_icon from "./menu_icon.svg";
 import close_icon from "./close_icon.svg";
 import user from "./user.jpg";
 import heroimg from "./heroimg.png";
+import heroimage from "./heroimage.png";
 import logo from "./logo.svg";
 
 // Project Images
@@ -63,6 +64,7 @@ const assets = {
   // General
   logo,
   heroimg,
+  heroimage,
   arrow_icon,
   menu_icon,
   close_icon,
